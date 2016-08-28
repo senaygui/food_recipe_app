@@ -1,0 +1,9 @@
+<h1>
+	<%= @recipe.title %>
+</h1>
+<p>
+	<%= @recipe.description %>
+</p>
+<%= link_to "Back", root_path, class: "btn btn-default"%>
+<%= link_to("Edit", edit_recipe_path, class: 'btn btn-default') %>
+<%= link_to("Delete", recipe_path, method: :delete, data:{confirm: "Are You Sure?" }, class: 'btn btn-default')%>
